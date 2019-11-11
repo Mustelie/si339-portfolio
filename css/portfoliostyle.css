@@ -35,11 +35,11 @@ nav li{
 nav a{
   color: #3A405A;
   font-weight: bold;
-  text-decoration: none; /*Your code here - remove the underline*/
+  text-decoration: none; 
 }
 
 nav a:hover{
-  text-decoration:underline; /*Your code here - add the underline*/
+  text-decoration:underline; 
 }
 
 .skip a{
@@ -84,81 +84,7 @@ footer{
   margin: auto;
 }
 
-header{
-  height: 100vh;
-  width: 100vw;               
-}
 
-header p{
-  color: #3A405A;
-  font-size: 24px;
-  padding: 0 100px;
-  text-align: center;
-}
-
-.about-image{
-  max-width:25%;
-  align-content: center;
-  height:auto;
-  overflow: hidden;
-  /*Your code here */
-
-}
-
-.research-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    justify-content: space-around;
-}
-.research-gallery img {
-  max-width:15vw;
-  align-content: center;
-  height:auto;
-}
-
-.about{
-  height: 100vh;
-  width: 100vw;    
-  /*Your code here */
-}
-
-.design-image{
-  max-width:15vw;
-  align-content: center;
-  height:auto;
-  transform: rotate(90deg);
-}
-
-.design{
-  height: 100vh;
-  width: 100vw;    
-    /*Your code here - start in the 2nd column*/
-}
-
-.research-image{
-  max-width:25%;
-  align-content: center;
-  height:auto;
-}
-
-.research{
-  height: 100vh;
-  width: 100vw;    
- /*Your code here */
-}
-
-.contact-image{
-  max-width:25%;
-  align-content: center;
-  height:auto;
-}
-
-.contact{
-  height: 100vh;
-  width: 100vw;    
-   /*Your code here */
-}
 
 .text-block{
   align-self: center;
@@ -174,73 +100,21 @@ header p{
 
 @media screen and (min-width: 800px){
 
-  .container{
-    /*Your code here */
-  }
-
   .nav{
-    background-color: #ddd;
-
-     /*Your code here */
-     text-align: center;
-     overflow: hidden;
+    text-align: center;
+    overflow: hidden;
     vertical-align: middle;
     top:0;
     width:100%;
-    /*grid-column: 1/-1;
-    grid-row: 1/span 1;*/
     display: block;
     position: fixed;
-    /*Provided*/
     background-color: #E9AFA3;
     padding: 20px 0; 
-    text-align: left; 
     margin: auto;
   }
 
-  .about-image{
-     /*Your code here */
-    max-width:25%;
-    align-content: center;
-    height:auto;
-    }
 
-  .about{
-    height: 100vh;
-  width: 100vw;  
-    /*Your code here */
-  }
 
-  .design-image{
-  max-width:25%;
-  align-content: center;
-  height:auto;
-    /*Your code here */
-  }
-
-  .design{
-    height: 100vh;
-    width: 100vw;  
-    /*Your code here */
-  }
-
-  .research{
-    height: 100vh;
-    width: 100vw;  
-    /*Your code here */
-  }
-
-  .contact-image{
-    max-width:25%;
-    align-content: center;
-    height:auto;  
-  }
-
-  .contact{
-    
-    height: 100vh;
-    width: 100vw;  
-   }
 
 } 
 
