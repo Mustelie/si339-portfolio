@@ -3,13 +3,13 @@ html{
 }
 
 body{
-  background-color: #ddd;
+  background-color: #fff2f3;
   font-size: 18px;
   margin: 0;
   padding: 0;
 }
-
 h1{
+  color: #3A405A;
   font-size: 50px;
   line-height: 1;
   padding: 50px 0;
@@ -33,7 +33,7 @@ nav li{
 }
 
 nav a{
-  color: black;
+  color: #3A405A;
   font-weight: bold;
   text-decoration: none; /*Your code here - remove the underline*/
 }
@@ -46,16 +46,13 @@ nav a:hover{
   background: white;
   left: 0;
   padding: 6px;
-  position: absolute/*Your code here - position relative to the parent */;
-  top: -40px      /*Your code here - place 40px higher */;
+  position: absolute;
+  top: -40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
 }
 
-/*Your code here*/{
-/*Add the selector and rule to move the skip link to the exact top.*/
-}
 
 :focus{
   border:2px solid black;
@@ -63,10 +60,9 @@ nav a:hover{
 
 
 footer{
-  background-color: black;
-  color: white;
-  grid-column: 1 / -1;  /*Can you explain what this does?*/
-  grid-row: 7 / auto;   /*Can you rewrite it?*/
+  color: #3A405A;
+  width: 100vw;
+  height: 20vh;
   padding-top: 30px;
   text-align: center;
 }
@@ -74,103 +70,87 @@ footer{
 
 .container{
   display: grid;
-  grid-template-columns: 100px 500px 100px; /*Your code here  */
+  grid-template-columns: 100px 500px 100px;
   grid-row-gap: 15px;
-  /*Provided*/
   grid-template-rows: 30px auto auto auto auto auto 100px; 
   width: 100vw; 
 }
 .nav{
-   /*Your code here */
+  overflow: hidden;
   vertical-align: middle;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  grid-column: 1/-1;
-  grid-row: 1/span 1;
-  /*Provided*/
-  background-color: #ddd;
+  top:0;
+  width:100%;
+  display: block;
+  position: fixed;
+  background-color: #E9AFA3;
   padding: 20px 0; 
   text-align: left; 
-  margin: 0 auto;
+  margin: auto;
 }
 
 header{
-  background-attachment: fixed; /* Parallax effect */
-  background-image: url("../images/header.jpg");      /* Your code here - Link to header.jpg in the images folder */
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
-  color: white;
-  height: 400px;                /* Parallax effect */
-
-  /*Your code here - cover the entire row*/
-  grid-row: 2/auto;
-  grid-column: 1/-1;
+  height: 100vh;
+  width: 100vw;               
 }
 
 header p{
-  color: white;
+  color: #3A405A;
   font-size: 24px;
   padding: 0 100px;
   text-align: center;
 }
 
 .about-image{
-  grid-column: 1/-1;
-  grid-row: 3/auto;
-  max-height: 700px;
-  background-image: url('../images/about.jpg');
+  max-width:100%;
+  height:auto;
   overflow: hidden;
   /*Your code here */
 
+}
+
+.research-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
 }
 
 .about{
-  grid-row: 3/auto;
-  grid-column: 2/auto;
+  height: 100vh;
+  width: 100vw;    
   /*Your code here */
 }
 
-.method-image{
-  grid-column: 1/-1;
-  grid-row: 4/auto;
-  max-height: 700px;
-  background-image: url('../images/method.jpg');
-  overflow: hidden;
-  /*Your code here */
+.design-image{
+  max-width:100%;
+  height:auto;
 }
 
-.method{
-  grid-row: 4/auto;
-  grid-column: 2/auto;
+.design{
+  height: 100vh;
+  width: 100vw;    
     /*Your code here - start in the 2nd column*/
 }
 
-.clients-image{
-  grid-column: 1/-1;
-  grid-row: 5/auto;
-  max-height: 700px;
-  background-image: url(../images/clients.jpg);
-  overflow: hidden;
+.research-image{
+  max-width:100%;
+  height:auto;
 }
 
-.clients{
-  grid-row: 5/auto;
-  grid-column: 2/auto;
+.research{
+  height: 100vh;
+  width: 100vw;    
  /*Your code here */
 }
 
 .contact-image{
-  grid-column: 1/-1;
-  grid-row: 6/auto;
-  max-height: 700px;
-  background-image: url('../images/contact.jpg');
-  overflow: hidden;
+  max-width:100%;
+  height:auto;
 }
 
 .contact{
-  grid-row: 6/auto;
-  grid-column: 2/auto;
+  height: 100vh;
+  width: 100vw;    
    /*Your code here */
 }
 
@@ -179,8 +159,8 @@ header p{
   vertical-align: middle;
    /*Your code here */
   
-  background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
+  background-color: #99B2DD;
+  border: white;
   padding: 30px;
 }
 
@@ -198,80 +178,68 @@ header p{
     background-color: #ddd;
 
      /*Your code here */
-     text-align: right;
-     vertical-align: middle;
-     padding-top: 35px;
-     padding-bottom: 35px;
-     grid-column: 1/-1;
-     grid-row: 1/span 1;
+     text-align: center;
+     overflow: hidden;
+    vertical-align: middle;
+    top:0;
+    width:100%;
+    /*grid-column: 1/-1;
+    grid-row: 1/span 1;*/
+    display: block;
+    position: fixed;
+    /*Provided*/
+    background-color: #E9AFA3;
+    padding: 20px 0; 
+    text-align: left; 
+    margin: auto;
   }
 
   .about-image{
      /*Your code here */
-    background-image: url('..images/about.jpg');
-    overflow: hidden;
-    max-height: 700px;
-    grid-column: 2/span 2;
-    grid-row: 3/auto; 
+    max-width:100%;
+    height:auto;
     }
 
   .about{
-    grid-column: 3/span 2;
-    grid-row: 3/auto;
+    height: 100vh;
+  width: 100vw;  
     /*Your code here */
   }
 
-  .method-image{
-    background-image: url('..images/method.jpg');
-    overflow: hidden;
-    max-height: 700px;
-    grid-column: 3/span 2;
-    grid-row: 4/auto; 
+  .design-image{
+  max-width:100%;
+  height:auto;
     /*Your code here */
   }
 
-  .method{
-    grid-column: 2/span 2;
-    grid-row: 4/auto;
+  .design{
+    height: 100vh;
+    width: 100vw;  
     /*Your code here */
   }
 
-  .clients-image{
-    background-image: url('..images/clients.jpg');
-    overflow: hidden;
-    max-height: 700px;
-    grid-column: 2/span 2;
-    grid-row: 5/auto;    
-    /*Your code here */
-
-  }
-
-  .clients{
-    grid-column: 3/span 2;
-    grid-row: 5/auto;
+  .research{
+    height: 100vh;
+    width: 100vw;  
     /*Your code here */
   }
 
   .contact-image{
-    /*Your code here */
-    background-image: url(..images/contact.jpg);
-    overflow: hidden;
-    max-height: 700px;
-    grid-column: 3/span 2;
-    grid-row: 6/auto;
+    max-width:100%;
+    height:auto;  
   }
 
   .contact{
-    /*Your code here */
-    grid-column: 2/span 2;
-    grid-row: 6/auto;
+    
+    height: 100vh;
+    width: 100vw;  
    }
 
-}  /*End the media query*/
+} 
 
 @media screen and (prefers-reduced-motion: reduce){
   html{
-      scroll-behavior: auto; /* Removes scroll animation */
+      scroll-behavior: auto;
   }
 
   .skip a{
@@ -280,8 +248,8 @@ header p{
     padding: 6px;
     position: absolute;
     top: -40px;
-    -webkit-transition: auto; /* Your code here - set to default setting */
-    transition: auto; /* Your code here - set to default setting */
+    -webkit-transition: auto;
+    transition: auto;
     z-index: 1;
   }
 
