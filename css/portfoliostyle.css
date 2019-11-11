@@ -69,10 +69,6 @@ footer{
 
 
 .container{
-  display: grid;
-  grid-template-columns: 100px 500px 100px;
-  grid-row-gap: 15px;
-  grid-template-rows: 30px auto auto auto auto auto 100px; 
   width: 100vw; 
 }
 .nav{
@@ -101,7 +97,8 @@ header p{
 }
 
 .about-image{
-  max-width:100%;
+  max-width:25%;
+  align-content: center;
   height:auto;
   overflow: hidden;
   /*Your code here */
@@ -114,6 +111,11 @@ header p{
     padding: 5px;
     justify-content: space-around;
 }
+.research-gallery img {
+  max-width:15vw;
+  align-content: center;
+  height:auto;
+}
 
 .about{
   height: 100vh;
@@ -122,8 +124,10 @@ header p{
 }
 
 .design-image{
-  max-width:100%;
+  max-width:15vw;
+  align-content: center;
   height:auto;
+  transform: rotate(90deg);
 }
 
 .design{
@@ -133,7 +137,8 @@ header p{
 }
 
 .research-image{
-  max-width:100%;
+  max-width:25%;
+  align-content: center;
   height:auto;
 }
 
@@ -144,7 +149,8 @@ header p{
 }
 
 .contact-image{
-  max-width:100%;
+  max-width:25%;
+  align-content: center;
   height:auto;
 }
 
@@ -170,8 +176,6 @@ header p{
 
   .container{
     /*Your code here */
-    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
-    grid-template-columns: 50px auto 500px auto 50px;
   }
 
   .nav{
@@ -196,7 +200,8 @@ header p{
 
   .about-image{
      /*Your code here */
-    max-width:100%;
+    max-width:25%;
+    align-content: center;
     height:auto;
     }
 
@@ -207,7 +212,8 @@ header p{
   }
 
   .design-image{
-  max-width:100%;
+  max-width:25%;
+  align-content: center;
   height:auto;
     /*Your code here */
   }
@@ -225,7 +231,8 @@ header p{
   }
 
   .contact-image{
-    max-width:100%;
+    max-width:25%;
+    align-content: center;
     height:auto;  
   }
 
