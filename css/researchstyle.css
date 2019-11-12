@@ -5,6 +5,7 @@
 }
 p {
  grid-row: 2/span 3;
+
 }
 
 .research-gallery {
@@ -22,7 +23,7 @@ p {
 
 
 
-.research-image{
+.research-image img{
   max-width:25%;
   align-content: center;
   height:auto;
@@ -37,9 +38,4 @@ p {
 
 }
 @media screen and (min-width: 800px){
-
-	.research{
-    width: 100vw;  
-    /*Your code here */
-  }
 }

@@ -1,33 +1,56 @@
 .container {
   grid-template-rows: auto auto auto auto auto;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 15vw auto 10vw auto 15vw;
+  z-index:1;
 }
-p {
- grid-row: 2/span 3;
+.contact-image{
+	overflow: hidden;
+}
+.contact-image img{
+  max-width:80vw;
+  height: auto;
+  grid-row: 2;
+  grid-column: 2/span 2;
+  margin: 0 10vw;
+  margin-top: 3vw;
+}
+
+.contact-me{
+  grid-row: 2;
+  grid-column: 4/span 2;
+}
+
+.container {
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 10vw auto 10vw;
+}
+.contact-image img{
+	grid-row: 2;
+	grid-column: 2;
+}
+.contact-image img{
+	grid-row: 4;
+	grid-column: 2;
+}
+@media screen and (min-width: 1000px){
+.container {
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 15vw auto 10vw auto 15vw;
 }
 
 .contact-image img{
   max-width:25vw;
-  align-content: center;
-  height:auto;
+  height: auto;
+  grid-row: 2;
+  grid-column: 2/span 2;
 }
 
-.contact{
-  height: 100vh;
-  width: 100vw;    
-   /*Your code here */
+.contact-text-block{
+  grid-row: 2;
+  grid-column: 4/span 2;
+}
 }
 @media screen and (min-width: 800px){
-	.contact-image img{
-    max-width:25vw;
-    align-content: center;
-    height:auto;  
-  }
 
-  .contact{
-    
-    height: 100vh;
-    width: 100vw;  
-   }
 
 } 

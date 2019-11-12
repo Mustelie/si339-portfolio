@@ -1,35 +1,57 @@
 .container {
   grid-template-rows: auto auto auto auto auto;
-  grid-template-columns: auto auto auto auto;
-}
-p {
- grid-row: 2/span 3;
+  grid-template-columns: 15vw auto 10vw auto 15vw;
+  z-index:1;
 }
 .design-image{
-  max-width:50px;
-  align-content: center;
-  max-height: 100px;
+	overflow: hidden;
+}
+.design-image img{
+  max-width:80vw;
+  height: auto;
   transform: rotate(90deg);
+  grid-row: 2;
+  grid-column: 2/span 2;
+  margin: 0 10vw;
+  margin-top: 3vw;
 }
 
-.design{
-  height: 100vh;
-  width: 100vw;    
-    /*Your code here - start in the 2nd column*/
+.design-text-block{
+  grid-row: 2;
+  grid-column: 4/span 2;
 }
-@media screen and (min-width: 800px){
-	.design-image{
-  	max-width:25%;
-  	align-content: center;
-  	height:auto;
-    /*Your code here */
-  }
 
-  .design{
-    height: 100vh;
-    width: 100vw;  
-    /*Your code here */
-  }
+.container {
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 10vw auto 10vw;
+}
+.design-image img{
+	grid-row: 2;
+	grid-column: 2;
+}
+.design-image img{
+	grid-row: 4;
+	grid-column: 2;
+}
+@media screen and (min-width: 1000px){
+.container {
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 15vw auto 10vw auto 15vw;
+}
+
+.design-image img{
+  max-width:30vw;
+  height: auto;
+  grid-row: 2;
+  grid-column: 2/span 2;
+}
+
+.design-text-block{
+  grid-row: 2;
+  grid-column: 4/span 2;
+}
+}
+@media screen and (min-width: 700px){
 
 
 
