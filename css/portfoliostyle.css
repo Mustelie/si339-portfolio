@@ -24,6 +24,7 @@ h2{
   background-color: #E9AFA3;
 }
 .header img{
+  overflow: hidden;
   vertical-align: middle;
   max-width: 100vw;
   
