@@ -1,0 +1,30 @@
+
+.design-image{
+  max-width:50px;
+  align-content: center;
+  max-height: 100px;
+  transform: rotate(90deg);
+}
+
+.design{
+  height: 100vh;
+  width: 100vw;    
+    /*Your code here - start in the 2nd column*/
+}
+@media screen and (min-width: 800px){
+	.design-image{
+  	max-width:25%;
+  	align-content: center;
+  	height:auto;
+    /*Your code here */
+  }
+
+  .design{
+    height: 100vh;
+    width: 100vw;  
+    /*Your code here */
+  }
+
+
+
+} 

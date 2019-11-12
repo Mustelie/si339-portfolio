@@ -9,12 +9,16 @@
 
     <title>Katherine Mustelier</title>
   </head>
+  
   	<body>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
-	<div class='container'>
-	<div class="nav">
+	<header>
+	<img src="img/remember_name.png" alt="Decorative image that says Katherine Mustelier"/>
+	</header>
+	<div class = 'nav' id="nav">
       <nav>
         <ul>
+        	<img src="img/remember_name.png" alt="Decorative image that says Katherine Mustelier"/>
           <li><a href="index.html">About</a></li>
           <li><a href="design.html">Design Philosophy</a></li>
           <li><a href="research.html">Research</a></li>
@@ -23,17 +27,35 @@
       </nav>
     </div>
 
-    <header id="main">
+<div class='container'>
+
     <div class="about-image">
       <img src="img/remember_her.png" alt="A picture of a woman on a beach closing her eyes and smiling, facing slightly away from the camera."/>
     </div>
     <h1>Katherine Mustelier</h1>
     <p>UX Researcher and Designer</p>
     
-    </header>
     <footer>
       <p>This website was created by Katherine Mustelier for SI 339</p>
     </footer>
     </div>
   </body>
+  <script type="text/javascript">
+  	window.onscroll = function() {stickyScroll()};
+
+
+var navbar = document.getElementById("nav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyScroll() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+  </script>
 </html>

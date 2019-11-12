@@ -8,9 +8,26 @@
     <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
     <title>Katherine Mustelier</title>
   </head>
+  <div class='header'>
+  <img src="img/remember_name.png" alt="Decorative image that says Katherine Mustelier"/>
+  </div>
+  <div class = 'nav' id="nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="design.html">Design Philosophy</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="secretpage.html">Secret</a></li>
+        </ul>
+      </nav>
+    </div>
+
   <body>
+
   <div class="skip"><a href="#main">Skip to Main Content</a></div>
   <div class='container'>
+  <div class = 'content'>
   <div class= 'contact-me'>
     <div class="contact-image">
       <img src="img/contact.png"/>
@@ -40,4 +57,22 @@
       <p>This website was created by Katherine Mustelier for SI 339</p>
     </footer>
   </div>
+</div>
 </body>
+<script type="text/javascript">
+  window.onscroll = function() {stickyScroll()};
+
+  var nav = document.getElementById("nav");
+
+  var sticky = nav.offsetTop;
+
+  function stickyScroll() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("sticky");
+  } 
+  else {
+    nav.classList.remove("sticky");
+  }
+}
+  </script>
+  </html>

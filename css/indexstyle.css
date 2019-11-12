@@ -1,0 +1,31 @@
+
+
+.about-image{
+  max-width:50px;
+  align-content: center;
+  height:auto;
+  overflow: hidden;
+  /*Your code here */
+
+}
+.about{
+  height: 100vh;
+  width: 100vw;    
+  /*Your code here */
+}
+@media screen and (min-width: 800px){
+	  .about-image{
+     /*Your code here */
+    max-width:25%;
+    align-content: center;
+    height:auto;
+    }
+
+  .about{
+    height: 100vh;
+  width: 100vw;  
+    /*Your code here */
+  }
+
+
+} 

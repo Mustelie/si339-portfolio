@@ -1,0 +1,33 @@
+
+.research-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+}
+.research-gallery img {
+  max-width:15vw;
+  align-content: center;
+  height:auto;
+}
+
+
+
+
+.research-image{
+  max-width:25%;
+  align-content: center;
+  height:auto;
+}
+
+.research{
+  width: 100vw;    
+ /*Your code here */
+}
+@media screen and (min-width: 800px){
+
+	.research{
+    width: 100vw;  
+    /*Your code here */
+  }
+}

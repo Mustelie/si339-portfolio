@@ -1,0 +1,27 @@
+
+
+.contact-image img{
+  max-width:25vw;
+  align-content: center;
+  height:auto;
+}
+
+.contact{
+  height: 100vh;
+  width: 100vw;    
+   /*Your code here */
+}
+@media screen and (min-width: 800px){
+	.contact-image img{
+    max-width:25vw;
+    align-content: center;
+    height:auto;  
+  }
+
+  .contact{
+    
+    height: 100vh;
+    width: 100vw;  
+   }
+
+} 
