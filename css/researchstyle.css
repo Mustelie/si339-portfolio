@@ -11,15 +11,18 @@ p {
 .research-gallery {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     padding: 5px;
     justify-content: space-around;
 }
 .research-gallery img {
-  max-width:15vw;
-  align-content: center;
+max-width: 30vw;
   height:auto;
+  display: block;
 }
-
+.cell {
+    width: 50%;
+  }
 
 
 
@@ -35,7 +38,12 @@ p {
 }
 
 @media screen and (min-width: 1000px){
-
+	.cell {
+    width: calc(100% / 3);
+  }
 }
-@media screen and (min-width: 800px){
+@media screen and (min-width: 600px){
+	.cell {
+    width: 50%;
+  }
 }
