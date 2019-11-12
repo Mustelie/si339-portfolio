@@ -16,12 +16,13 @@ p {
     justify-content: space-around;
 }
 .research-gallery img {
-max-width: 30vw;
+  max-width: 30vw;
   height:auto;
   display: block;
 }
 .cell {
     width: 50%;
+    margin: 1rem;
   }
 
 
@@ -39,11 +40,12 @@ max-width: 30vw;
 
 @media screen and (min-width: 1000px){
 	.cell {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 2rem);
+
   }
 }
 @media screen and (min-width: 600px){
 	.cell {
-    width: 50%;
+    width: calc(50% - 2rem);
   }
 }
