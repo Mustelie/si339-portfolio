@@ -22,12 +22,16 @@ h2{
 }
 .header {
   background-color: #E9AFA3;
+  max-width: 100vw;
 }
 .header img{
-  overflow: hidden;
-  vertical-align: middle;
+  padding: auto;
   max-width: 100vw;
-  
+  vertical-align: middle;
+}
+.top-bit{
+  background-color: #E9AFA3;
+  width: 100vw;
 }
 nav ul{
   list-style-type: none;
