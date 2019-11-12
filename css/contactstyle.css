@@ -1,4 +1,10 @@
-
+.container {
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+}
+p {
+ grid-row: 2/span 3;
+}
 
 .contact-image img{
   max-width:25vw;
